@@ -7,7 +7,7 @@
 [![Build Status](https://travis-ci.org/turtlecoin/turtle-pool.svg?branch=development)](https://travis-ci.org/turtlecoin/turtle-pool)
 
 
-FRED-pool (turtle-pool (for NodeJS LTS)
+FRED-pool forked from turtle-pool (for NodeJS LTS)
 ====================
 Formerly known as cryptonote-forknote-pool, forked from Forknote Project.
 
