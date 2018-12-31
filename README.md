@@ -328,13 +328,13 @@ Explanation for each field:
 /* Coin daemon connection details. */
 "daemon": {
     "host": "127.0.0.1",
-    "port": 32808
+    "port": 32809
 },
 
 /* Wallet daemon connection details. */
 "wallet": {
     "host": "127.0.0.1",
-    "port": 32809,
+    "port": 8070,
     "password": "<replace with rpc password>"
 },
 
