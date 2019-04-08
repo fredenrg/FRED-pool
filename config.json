@@ -1,8 +1,8 @@
 {
-  "coin": "turtlecoin",
-  "symbol": "TRTL",
-  "coinUnits": 100,
-  "coinDifficultyTarget": 30,
+  "coin": "fredenergy",
+  "symbol": "FRED",
+  "coinUnits": 1000000000,
+  "coinDifficultyTarget": 120,
   "logging": {
     "files": {
       "level": "info",
@@ -23,17 +23,17 @@
     "ports": [
       {
         "port": 3333,
-        "difficulty": 100,
+        "difficulty": 10000,
         "desc": "Low end hardware"
       },
       {
         "port": 5555,
-        "difficulty": 2000,
+        "difficulty": 200000,
         "desc": "Mid range hardware"
       },
       {
         "port": 7777,
-        "difficulty": 10000,
+        "difficulty": 400000,
         "desc": "High end hardware"
       },
       {
@@ -44,7 +44,7 @@
       }
     ],
     "varDiff": {
-      "minDiff": 100,
+      "minDiff": 10000,
       "maxDiff": 500000,
       "targetTime": 10,
       "retargetTime": 30,
@@ -89,11 +89,11 @@
     "allowPaymentId": true,
     "interval": 120,
     "maxAddresses": 50,
-    "transferFee": 100,
+    "transferFee": 100000000,
     "minPayment": 100000,
     "minPaymentIdPayment": 10000000,
     "maxTransactionAmount": 0,
-    "denomination": 100
+    "denomination": 1000000000
   },
   "blockUnlocker": {
     "enabled": true,
