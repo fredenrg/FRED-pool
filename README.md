@@ -1,5 +1,9 @@
 
+#### Master Build Status
+[![Build Status](https://travis-ci.org/turtlecoin/node-turtle-pool.svg?branch=master)](https://travis-ci.org/turtlecoin/node-turtle-pool)
 
+#### Development Build Status
+[![Build Status](https://travis-ci.org/turtlecoin/node-turtle-pool.svg?branch=development)](https://travis-ci.org/turtlecoin/node-turtle-pool)
 
 FRED-pool forked from turtle-pool (for NodeJS LTS)
 ====================
@@ -114,7 +118,7 @@ you are using - a good place to start with redis is [data persistence](http://re
 
 ##### Easy install on Ubuntu 14 LTS
 
-Installing pool on different Linux distributives is different because it depends on system default components and versions. For now the easiest way to install pool is to use Ubuntu 14 LTS. Thus, all you had to do in order to prepare Ubunty 14 for pool installation is to run:
+Installing pool on different Linux distributives is different because it depends on system default components and versions. For now the easiest way to install pool is to use Ubuntu 14 LTS. Thus, all you had to do in order to prepare Ubuntu 14 for pool installation is to run:
 
 ```bash
 sudo apt-get install -y git build-essential redis-server libboost1.55-all-dev cmake libssl-dev node-gyp
@@ -549,12 +553,19 @@ enable-cors=*
 ```
 
 * Launch forknoted with the corresponding config file
-* Change the following line in the pool's frontend config.json:
+* Change the following line in the pool's frontend config.js:
 
 ```
 var api_blockexplorer = "http://daemonhost.com:1118";
 ```
 
+* Finally, edit these variables in the pool's frontend config.js using this syntax:
+
+```
+var blockchainExplorer = 'http://poolhost/?hash={id}#blockchain_block'
+
+var transactionExplorer = 'http://poolhost/?hash={id}#blockchain_transaction'
+```
 
 Credits
 ===
